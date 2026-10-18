@@ -1,1 +1,4 @@
-<html><body>OK</body></html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TeslaBot</title></head>
+<body style="font-family:sans-serif;padding:24px"><h2>테슬라 로그인 완료</h2><p>아래 코드를 복사해서 테슬라봇에게 보내 주세요.</p>
+<textarea id="c" style="width:100%;height:120px;font-size:16px"></textarea><br><br><button onclick="navigator.clipboard.writeText(document.getElementById('c').value);this.innerText='복사됨'" style="font-size:18px;padding:10px 20px">복사</button>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||('오류: '+(p.get('error')||'코드 없음'));</script></body></html>
